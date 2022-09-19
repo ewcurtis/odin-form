@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+
 header {
     font-size: 1.2em;
     font-weight: bold;
@@ -10,7 +11,19 @@ header {
 form {
     width: 50vw;
     height: 70vh;
+    align-self: end;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.3em;
+}
+
+.content {
+    margin: 0 10vw;
+    display: flex;
+    gap: 8px;
+}
+
+.logo {
+    width: 30vw;
     background-image: url("nature.jpg"); /*photo by Francesco Ungaro*/
     background-size: cover;
-    align-self: end;
 }
