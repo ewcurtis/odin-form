@@ -8,11 +8,11 @@ header {
     font-size: 1.2em;
     font-weight: bold;
     margin: 6em 1em 1em 1em;
-    width: 40vw;
+    width: max(40vw, 300px);
 }
 
 form {
-    height: 35vh;
+    height: max(300px, 35vh);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1em;
     margin: 1em 0;
@@ -37,25 +37,29 @@ a {
 }
 
 
-
+/***Classes***/
 .content {
     margin: 0 10vw;
     display: flex;
-
 }
 
 .logo {
-    width: 30vw;
+   width: max(30vw, 200px);
     background-image: url("nature.jpg"); /*photo by Francesco Ungaro*/
     background-size: cover;
+    flex: 1 0 auto;
+}
+
+.copyright {
+    align-self: end;
 }
 
 .main {
-    width: 50vw;
+    width: max(50vw, 600px);
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: max(100vh, 700px);
 }
 
 .bttn {
@@ -71,4 +75,32 @@ a {
 
 .redirect {
     margin: 1em;
+}
+
+@media screen and (max-width: 500px) {
+
+    header {
+        margin: 2em 1em 1em 1em;
+    }
+
+    .content {
+        flex-direction: column;
+        margin: 0;
+        position: relative;
+    }
+    .logo  {
+        height: 200px;
+        width: 100vw;
+        position: sticky;
+    }
+
+    .logo a {
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+    .content {
+        margin: 0;
+    }
 }
