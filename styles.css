@@ -47,6 +47,18 @@ img {
     
 }
 
+input {
+    border-radius: 4px;
+}
+
+input:focus {
+    background: rgba(89,112,131,0.2);
+    border: 3px solid blue;
+    box-shadow: 0 4px 8px 0 rgba(0,0,20,0.4), 0 6px 20px 0 rgba(0, 112, 131, 0.19);
+}
+
+
+
 
 /***Classes***/
 .content {
@@ -66,7 +78,7 @@ img {
 }
 
 .img-background {
-    background-color: rgba(20,20,20,0.6);
+    background-color: rgba(20,20,20,0.4);
     margin-top: 5vh;
 }
 

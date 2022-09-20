@@ -32,24 +32,25 @@
                     <div class="row">
                         <section>
                             <div><label for="fname">First Name</label></div>
-                            <input id="fname" name="fname">
+                            <input id="fname" name="fname" required>
                         </section>
 
                         <section>
                             <div><label for="lname">Last Name</label></div>
-                            <input id="lname" name="lname">
+                            <input id="lname" name="lname" required>
                         </section>
 
                     </div>
                     <div class="row">
                         <section>
                             <div><label for="email">Email</label></div>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" required>
                         </section>
 
                         <section>
                             <div><label for="pNum">Phone Number</label></div>
-                            <input type="number" maxlength="10" id="pNum" name="phoneNumber">
+                            <input minlength="7" maxlength="10" id="pNum" name="phoneNumber"
+                             pattern="[0-9]{7,10}" title="Enter 7-10 numbers (no dashes, parenthesis, etc.)" required>
                         </section>
 
                     </div>
@@ -57,12 +58,12 @@
                     <div class="row">
                         <section>
                             <div><label for="pwd">Password</label></div>
-                            <input type="password" id="pwd" name="password">
+                            <input minlength="4" type="password" id="pwd" name="password" required>
                         </section>
 
                         <section>
                             <div><label for="confirmPwd">Confirm Password</label></div>
-                            <input type="password" id="confirmPwd" name="confirmPassword">
+                            <input minlength="4" type="password" id="confirmPwd" name="confirmPassword" required>
                         </section>
 
                         
