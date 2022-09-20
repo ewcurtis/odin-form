@@ -10,31 +10,30 @@ body {
     }
 
 header {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin: 6em 1em 1em 1em;
+    margin: 6rem 1rem 1rem 1rem;
     width: max(40vw, 300px);
 }
 
 form {
-    height: max(300px, 35vh);
+
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 1em;
-    margin: 1em 0;
-    font-size: 0.8em;
-    position: relative;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 0.8rem;
 
 }
 
 button {
-    padding: 0.3em;
+    padding: 0.3rem;
     border-radius: 5px;
     background-color: #597083;
     color: white;
 }
 
 h1 {
-    margin-left: 0.7em;
+    margin-left: 0.7rem;
 }
 
 a {
@@ -64,10 +63,11 @@ input:focus {
 .content {
     margin: 0 10vw;
     display: flex;
+    height: 100vh;
 }
 /*Left side content */
 .logo {
-   width: max(30vw, 300px);
+   width: max(30vw, 24rem);
     background-image: url("images/nature.jpg"); /*photo by Francesco Ungaro*/
     background-size: cover;
     flex: 1 0 auto;
@@ -88,7 +88,7 @@ input:focus {
     color: #fff;
     display: flex;
     align-items: center;
-    font-size: 7em;
+    font-size: 7rem;
     
     
 }
@@ -104,22 +104,21 @@ input:focus {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    height: max(100vh, 700px);
 }
 
 .bttn {
-    padding: 1em 2em;
-    margin: 1em 0 0 1em;
+    padding: 1rem 2rem;
+    margin: 1rem 0 0 1rem;
 }
 
 .row {
     display: flex;
-    gap: 6em;
-    margin: 1em;
+    gap: 6rem;
+    margin: 1rem;
 }
 
 .redirect {
-    margin: 1em;
+    margin: 1rem;
 }
 
 /*Different layouts for different screen sizes*/
@@ -127,24 +126,44 @@ input:focus {
 @media screen and (max-width: 500px) {
 
     header {
-        margin: 2em 1em 1em 1em;
+        margin: 2rem 0 1rem 0;
+    }
+
+    
+
+    label {
+        margin-top: 1rem;
     }
 
     .content {
         flex-direction: column;
         margin: 0;
-        position: relative;
     }
     .logo  {
-        height: 200px;
+        height: 12rem;
         width: 100vw;
-        position: sticky;
         color: #000;
     }
 
     .logo a {
         color: #fff;
     }
+
+    .main {
+        width: max(50vw, 500px);
+        align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+    }
+
+    .bttn {
+        margin-left: 0;
+    }
+
 }
 
 @media screen and (min-width: 401px) and (max-width: 900px) {
