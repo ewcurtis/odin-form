@@ -126,10 +126,9 @@ input:focus {
 @media screen and (max-width: 500px) {
 
     header {
-        margin: 2rem 0 1rem 0;
+        margin: 1rem;
+        width: 30vh;
     }
-
-    
 
     label {
         margin-top: 1rem;
@@ -161,8 +160,11 @@ input:focus {
     }
 
     .bttn {
-        margin-left: 0;
+        align-self: center;
+        margin-left: 0.8rem;
     }
+
+    
 
 }
 
