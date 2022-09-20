@@ -1,29 +1,74 @@
 body {
     margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Arial Narrow", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #201e1e;
     }
 
 header {
     font-size: 1.2em;
     font-weight: bold;
+    margin: 6em 1em 1em 1em;
+    width: 40vw;
 }
 
 form {
-    width: 50vw;
-    height: 70vh;
-    align-self: end;
+    height: 35vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 0.3em;
+    padding: 1em;
+    margin: 1em 0;
+    font-size: 0.8em;
+    position: relative;
+
 }
+
+button {
+    padding: 0.3em;
+    border-radius: 5px;
+    background-color: #597083;
+    color: white;
+}
+
+h1 {
+    margin-left: 0.7em;
+}
+
+a {
+    color: #597083
+}
+
+
 
 .content {
     margin: 0 10vw;
     display: flex;
-    gap: 8px;
+
 }
 
 .logo {
     width: 30vw;
     background-image: url("nature.jpg"); /*photo by Francesco Ungaro*/
     background-size: cover;
+}
+
+.main {
+    width: 50vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.bttn {
+    padding: 1em 2em;
+    margin: 1em 0 0 1em;
+}
+
+.row {
+    display: flex;
+    gap: 6em;
+    margin: 1em;
+}
+
+.redirect {
+    margin: 1em;
 }
