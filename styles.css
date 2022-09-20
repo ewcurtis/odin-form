@@ -1,3 +1,8 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(/fonts/Norse-Bold.otf);
+  }
+
 body {
     margin: 0;
     font-family: "Arial Narrow", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -36,23 +41,51 @@ a {
     color: #597083
 }
 
+img {
+    max-width: 100px;
+    height: auto;
+    
+}
+
 
 /***Classes***/
 .content {
     margin: 0 10vw;
     display: flex;
 }
-
+/*Left side content */
 .logo {
-   width: max(30vw, 200px);
-    background-image: url("nature.jpg"); /*photo by Francesco Ungaro*/
+   width: max(30vw, 300px);
+    background-image: url("images/nature.jpg"); /*photo by Francesco Ungaro*/
     background-size: cover;
     flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.img-background {
+    background-color: rgba(20,20,20,0.6);
+    margin-top: 5vh;
+}
+
+.img {
+    justify-content: center;
+    font-family: "norse-bold";
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 7em;
+    
+    
 }
 
 .copyright {
-    align-self: end;
+    align-self: center;
 }
+
+/*Right side content*/
 
 .main {
     width: max(50vw, 600px);
@@ -77,6 +110,8 @@ a {
     margin: 1em;
 }
 
+/*Different layouts for different screen sizes*/
+
 @media screen and (max-width: 500px) {
 
     header {
@@ -92,6 +127,7 @@ a {
         height: 200px;
         width: 100vw;
         position: sticky;
+        color: #000;
     }
 
     .logo a {
@@ -99,7 +135,7 @@ a {
     }
 }
 
-@media screen and (min-width: 401px) and (max-width: 1000px) {
+@media screen and (min-width: 401px) and (max-width: 900px) {
     .content {
         margin: 0;
     }
