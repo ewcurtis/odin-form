@@ -1,6 +1,6 @@
 @font-face {
     font-family: norse-bold;
-    src: url(/fonts/Norse-Bold.otf);
+    src: url(fonts/Norse-Bold.otf);
   }
 
 body {
@@ -84,7 +84,7 @@ input:focus {
 
 .img {
     justify-content: center;
-    font-family: "norse-bold";
+    font-family: norse-bold;
     color: #fff;
     display: flex;
     align-items: center;
